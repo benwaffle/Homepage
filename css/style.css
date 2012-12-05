@@ -143,8 +143,8 @@ button, input {
     border-radius:5px;
     box-shadow:inset #0f0f0f 0 -1px 6px;
 	
-    -webkit-transition: all .4s cubic-bezier(0.680, -0.550, 0.265, 1.550);
-	-moz-transition: all .4s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    -webkit-transition: all .4s cubic-bezier(0, -0.550, 0.265, 1.550);
+	-moz-transition: all .4s cubic-bezier(0, -0.550, 0.265, 1.550);
 	
 	/* on page load tiles pop in */
     -webkit-animation: animate-sites .5s cubic-bezier(0.680, -0.550, 0.265, 1.550);
