@@ -14,18 +14,18 @@ var config =
 {
     "sites":
     [
-        { "url": "http://gmail.com/",                                "text": "GM" },
-        { "url": "http://youtube.com/",                              "text": "YT"  },
+        { "url": "http://gmail.com/",                                "text": "gmail" },
+        { "url": "http://youtube.com/",                              "text": "youtube"  },
         { "url": "http://boards.4chan.org/g/",                       "text": "/g/"   },
-        { "url": "http://boards.4chan.org/b/",                       "text": "/b/"  },
-        { "url": "http://reddit.com/",                         		 "text": "RDT"  },
-        { "url": "http://thepiratebay.se/",                           "text": "TPB" },
-        { "url": "http://bitsoup.org/",    					       	 "text": "BS"  },
-		{ "url": "http://subscene.com/",                           "text": "SS"   },
-        { "url": "http://facebook.com/",                         	"text": "FB"   },
-        { "url": "http://deviantart.com",                           "text": "DA"  },
-        { "url": "http://pandora.com/",                          "text": "PD" },
-        { "url": "http://engadget.com/",                          "text": "EN"   }
+        { "url": "http://boards.4chan.org/lit/",                       "text": "/lit/"  },
+        { "url": "http://slashdot.org",                         		 "text": "/."  },
+        { "url": "http://metasearch.torrentproject.com/",                           "text": "torrents" },
+        { "url": "http://extensions.gnome.org",    					       	 "text": "gnome"  },
+		{ "url": "http://www.free-tv-video-online.me/",                           "text": "free tv"   },
+        { "url": "http://facebook.com/",                         	"text": "facebook"   },
+        { "url": "http://libgen.info",                           "text": "libgen"  },
+        { "url": "http://pandora.com/",                          "text": "pandora" },
+        { "url": "http://github.com/",                          "text": "github"   }
     ],
     "search":
     {
