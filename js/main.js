@@ -16,8 +16,8 @@ var config =
     [
         { "url": "http://gmail.com/",                                "text": "gmail" },
         { "url": "http://youtube.com/",                              "text": "youtube"  },
-        { "url": "http://boards.4chan.org/g/",                       "text": "/g/"   },
-        { "url": "http://boards.4chan.org/lit/",                       "text": "/lit/"  },
+        { "url": "http://boards.4chan.org/g/",                       "text": "tech"   },
+        { "url": "http://boards.4chan.org/lit/",                       "text": "lit"  },
         { "url": "http://slashdot.org",                         		 "text": "/."  },
         { "url": "http://metasearch.torrentproject.com/",                           "text": "torrents" },
         { "url": "http://extensions.gnome.org",    					       	 "text": "gnome"  },
