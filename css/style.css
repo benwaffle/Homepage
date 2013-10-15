@@ -5,30 +5,36 @@
 	/* src: url("../fonts/Fruity microfont.ttf"); */
 	src:local("Squada One"), local("SquadaOne-Regular"), url("../fonts/SquadaOne.woff") format("woff");
 }
-@-webkit-keyframes animate-sites {
-    0% { transform:scale(0); opacity:0; }
-    25% { opacity:1; }
-    100% { transform:scale(1); }
-}
+
 /*scale from 0 to 1 for length of animation, change opacity from 0 to 1 after 25%*/
-@-moz-keyframes animate-sites {
+@keyframes animate-sites {
     0% { transform:scale(0) translateY(0vh); opacity:0; }
     25% { opacity:1; }
     100% { transform:scale(1) translateY(0); opacity: 1; }
 }
-@-webkit-keyframes animate-opacity {
-    0% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes animate-opacity {
+
+@keyframes animate-opacity {
     0% { transform: translateY(0vh) scale(0); opacity:0; }
     100% { transform: translateY(0) scale(1); opacity:1; }
 }
-@-webkit-keyframes animate-panel {
-    0% { box-shadow:none; height:0px; }
-    100% { box-shadow:#060600 0 0 10px; height:275px; }
+
+@keyframes animate-panel {
+    0% { box-shadow:none; height:275px; }
+    100% {  height:275px; }
 }
-@-moz-keyframes animate-panel {
+
+@-webkit-keyframes animate-sites {
+    0% { -webkit-transform:scale(0) translateY(0vh); opacity:0; }
+    25% { opacity:1; }
+    100% { -webkit-transform:scale(1) translateY(0); opacity: 1; }
+}
+
+@-webkit-keyframes animate-opacity {
+    0% { -webkit-transform: translateY(0vh) scale(0); opacity:0; }
+    100% { -webkit-transform: translateY(0) scale(1); opacity:1; }
+}
+
+@-webkit-keyframes animate-panel {
     0% { box-shadow:none; height:275px; }
     100% {  height:275px; }
 }
@@ -46,9 +52,9 @@ body, html {
 }
 button, input {
     -moz-transition:all .6s ease;
-    -webkit-transition:all .6s ease;
+    transition:all .6s ease;
     -moz-appearance:none;
-    -webkit-appearance:none;
+    appearance:none;
 }
 #parent {
     min-height:100%;
@@ -69,10 +75,10 @@ border: 0;
     height:275px;
     margin-left: 2rem; margin-right: 2rem;
     margin-top: auto; margin-bottom: auto;
-    box-shadow:rgba(0,0,0,0) 0 0 10px;
+    /*box-shadow:rgba(0,0,0,0) 0 0 10px;*/
     box-shadow: none;
     border-radius: 5px;
-    -webkit-animation: animate-panel .7s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    animation: animate-panel .7s cubic-bezier(0.680, -0.550, 0.265, 1.550);
     -moz-animation: animate-panel .7s cubic-bezier(0.680, 0, 0.265, 1.550);
 }
 #panel, #sites, #search, button, input {
@@ -138,7 +144,7 @@ border: 0;
     color: white;
 	display: none;
     font-family:'Squada One';
-    font-size:300%;
+    font-size:21pt;
     height:100px;
     line-height:100px;
     margin:5px;
@@ -159,10 +165,10 @@ border: 0;
     -moz-animation: animate-sites .5s cubic-bezier(0.680, -0.550, 0.265, 1.550);
 }
 
-#sites a:nth-of-type(odd) { animation-duration: .715s;  }
-#sites a:nth-of-type(even) {animation-duration: .52s; }
-#sites a:nth-of-type(3n+0) {animation-duration: .151s; }
-#sites a:nth-of-type(5n+2) {animation-duration: .3525s; }
+#sites a:nth-of-type(odd) { animation-duration: .715s; -webkit-animation-duration: .715s; }
+#sites a:nth-of-type(even) {animation-duration: .52s;-webkit-animation-duration: .52s; }
+#sites a:nth-of-type(3n+0) {animation-duration: .151s;-webkit-animation-duration: .151s; }
+#sites a:nth-of-type(5n+2) {animation-duration: .3525s;-webkit-animation-duration: .3525s; }
 #sites a:hover, #sites a:active {
 /*    background: none;
     border:1px solid transparent;
