@@ -7,14 +7,28 @@
 }
 
 /*scale from 0 to 1 for length of animation, change opacity from 0 to 1 after 25%*/
-@keyframes animate-sites {
-    0% { transform:scale(0) translateY(0vh); opacity:0; }
+@keyframes animate-sitesT {
+    0% { transform:scale(1) translateY(-100vh) rotate(0deg); opacity:1; }
     25% { opacity:1; }
     100% { transform:scale(1) translateY(0); opacity: 1; }
 }
-
+@keyframes animate-sitesR {
+    0% { transform:scale(.1) translateX(30vh) rotate(90deg); opacity:0; }
+    25% { opacity:1; }
+    100% { transform:scale(1) translateX(0); opacity: 1; }
+}
+@keyframes animate-sitesL {
+    0% { transform:scale(.1) translateX(-30vh) rotate(-100deg); opacity:0; }
+    25% { opacity:1; }
+    100% { transform:scale(1) translateX(0); opacity: 1; }
+}
+@keyframes animate-sitesB {
+    0% { transform:scale(.1) translateY(30vh) rotate(-40deg); opacity:0; }
+    25% { opacity:1; }
+    100% { transform:scale(1) translateY(0); opacity: 1; }
+}
 @keyframes animate-opacity {
-    0% { transform: translateY(0vh) scale(0); opacity:0; }
+    0% { transform: translateY(100vh) scale(1); opacity:1; }
     100% { transform: translateY(0) scale(1); opacity:1; }
 }
 
@@ -49,10 +63,11 @@ body, html {
     min-height:100%;
     margin:0;
     padding:0;
+    overflow: hidden;
 }
 button, input {
-    -moz-transition:all .6s ease;
-    transition:all .6s ease;
+    -moz-transition:all .6s linear;
+    transition:all .6s linear;
     -moz-appearance:none;
     appearance:none;
 }
@@ -91,8 +106,8 @@ border: 0;
     position:absolute;
     top:-28px;
     width:100%;
-    -webkit-animation: animate-opacity .8s ease-in;
-    -moz-animation: animate-opacity .8s ease-in;
+    -webkit-animation: animate-opacity .8s linear-in;
+    -moz-animation: animate-opacity .8s linear-in;
 }
 #navigation ul {
     list-style:none;
@@ -155,7 +170,10 @@ border: 0;
     width:100px;
     z-index:1;
     border-radius:5px;
+    border: none;
+    border-radius: 0px;
     box-shadow: rgba(0,0,0,.5) 0 0px 6px;
+    box-shadow: none;
     -webkit-transition: all .4s cubic-bezier(0, -0.550, 0.265, 1.550);
 	-moz-transition: all .4s cubic-bezier(0, -0.550, 0.265, 1.550);
 
@@ -165,10 +183,49 @@ border: 0;
     -moz-animation: animate-sites .5s cubic-bezier(0.680, -0.550, 0.265, 1.550);
 }
 
-#sites a:nth-of-type(odd) { animation-duration: .715s; -webkit-animation-duration: .715s; }
-#sites a:nth-of-type(even) {animation-duration: .52s;-webkit-animation-duration: .52s; }
-#sites a:nth-of-type(3n+0) {animation-duration: .151s;-webkit-animation-duration: .151s; }
-#sites a:nth-of-type(5n+2) {animation-duration: .3525s;-webkit-animation-duration: .3525s; }
+#sites a:nth-of-type(1n) {background: #4583EE;
+-moz-animation: animate-sitesR .7s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+-moz-animation: animate-sitesT .7s linear;}
+#sites a:nth-of-type(2n) {background: #CC181E;
+-moz-animation: animate-sitesB .75s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+-moz-animation: animate-sitesT .6s linear;}
+#sites a:nth-of-type(3n) {background: #D7D5F0;
+-moz-animation: animate-sitesB .48s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+-moz-animation: animate-sitesT .5s linear;}
+#sites a:nth-of-type(4n) {background: #777777;
+-moz-animation: animate-sitesB .66s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+-moz-animation: animate-sitesT .4s linear;}
+#sites a:nth-of-type(5n) {background: #005252;
+-moz-animation: animate-sitesB .5s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+-moz-animation: animate-sitesT .3s linear;}
+#sites a:nth-of-type(6n) {background: #46AAB0;
+-moz-animation: animate-sitesL .63s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+-moz-animation: animate-sitesT .2s linear;}
+#sites a:nth-of-type(7n) {background: #A8C3E1;
+-moz-animation: animate-sitesR .49s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+-moz-animation: animate-sitesT .6s linear;}
+#sites a:nth-of-type(8n) {background: #FFA628;
+-moz-animation: animate-sitesT .5s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+-moz-animation: animate-sitesT .5s linear;}
+#sites a:nth-of-type(9n) {background: #43609C;
+-moz-animation: animate-sitesT .6s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+-moz-animation: animate-sitesT .4s linear;}
+#sites a:nth-of-type(10n) {background: #AA0022;
+-moz-animation: animate-sitesT .58s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+-moz-animation: animate-sitesT .3s linear;}
+#sites a:nth-of-type(11n) {background: #729ECD;
+-moz-animation: animate-sitesT .48s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+-moz-animation: animate-sitesT .2s linear;}
+#sites a:nth-of-type(12n) {background: #647D8B;
+-moz-animation: animate-sitesL .65s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+-moz-animation: animate-sitesT .1s linear;}
+
+
+
+/*#sites a:nth-of-type(odd) { animation-duration: .715s; -webkit-animation-duration: .715s;     }
+#sites a:nth-of-type(even) {animation-duration: .52s;-webkit-animation-duration: .52s;     -moz-animation: animate-sites1 .5s cubic-bezier(0.680, -0.550, 0.265, 1.550);}
+#sites a:nth-of-type(3n+0) {animation-duration: .151s;-webkit-animation-duration: .151s;     -moz-animation: animate-sites2 .9s cubic-bezier(0.680, -0.550, 0.265, 1.550);}
+#sites a:nth-of-type(5n+2) {animation-duration: .3525s;-webkit-animation-duration: .3525s;    -moz-animation: animate-sites3 .3s cubic-bezier(0.680, -0.550, 0.265, 1.550); } */
 #sites a:hover, #sites a:active {
 /*    background: none;
     border:1px solid transparent;
@@ -176,29 +233,31 @@ border: 0;
 	 font-size: 330%; 
     box-shadow:none;
     text-shadow:#060606 0px 0px 5px, #b45151 0px 1px, #b04c4c 0px 2px;
-    z-index:2; */
-    background: #1e90ff;
+    z-index:2; 
+    background: #1e90ff;*/
+    box-shadow: inset 0px 0px 100px 100px rgba(255,255,255,.2);
 }
 #search {
     height:46px;
-    padding:5px 15px;
+    padding:5px 20px;
 	display: none;
 }
 #search form {
     position:relative;
-    -webkit-animation: animate-opacity .4s ease-in;
-    -moz-animation: animate-opacity .4s ease-in;
+    -webkit-animation: animate-opacity .4s linear;
+    -moz-animation: animate-opacity .6s linear;
 }
 #search input[type="text"] {
     background:rgba(22,22,22,.3);
     background: rgba(0,0,0,.1);
     border:1px solid rgba(30,30,30,.2);
     border-bottom:1px solid rgba(48,48,48,.4);
+    border: none;
     width:100%;
     height:33px;
     padding:3px 86px 3px 6px;
-    border-radius:5px;
-    box-shadow: rgba(0,0,0,.5) 0 0 3px;
+    /*border-radius:5px;
+    box-shadow: rgba(0,0,0,.5) 0 0 3px;*/
     color: black;
 }
 #search input[type="text"]:hover, #search input[type="text"]:focus {

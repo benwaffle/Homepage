@@ -17,14 +17,14 @@ var config =
         { "url": "http://gmail.com/",                                "text": "gmail" },
         { "url": "http://youtube.com/",                              "text": "youtube"  },
         { "url": "http://boards.4chan.org/g/",                       "text": "tech"   },
-        { "url": "http://boards.4chan.org/lit/",                       "text": "lit"  },
+        { "url": "http://stackoverflow.com",                       "text": "stack"  },
         { "url": "http://slashdot.org",                         		 "text": "/."  },
         { "url": "http://metasearch.torrentproject.com/",                           "text": "torrents" },
         { "url": "http://extensions.gnome.org",    					       	 "text": "gnome"  },
 		{ "url": "http://www.free-tv-video-online.me/",                           "text": "free tv"   },
-        { "url": "http://facebook.com/",                         	"text": "facebook"   },
+        { "url": "http://facebook.com/",                         	"text": "fb"   },
         { "url": "http://libgen.info",                           "text": "libgen"  },
-        { "url": "http://pandora.com/",                          "text": "pandora" },
+        { "url": "http://gnome-look.org/",                          "text": "look" },
         { "url": "http://github.com/",                          "text": "github"   }
     ],
     "search":
