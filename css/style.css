@@ -145,7 +145,7 @@ border: 0;
     width:692px;
 }
 #sites {
-    height:230px;
+    height:115px;
     padding:5px 10px;
     text-align:center;
 	display: none;
@@ -166,7 +166,7 @@ border: 0;
     position:relative;
     text-align:center;
     text-decoration:none;
-    text-shadow: rgba(48,48,48,.4)  -1px -1px 1px;
+    /*text-shadow: rgba(48,48,48,.4)  -1px -1px 1px;*/
     width:100px;
     z-index:1;
     border-radius:5px;
@@ -227,15 +227,7 @@ border: 0;
 #sites a:nth-of-type(3n+0) {animation-duration: .151s;-webkit-animation-duration: .151s;     -moz-animation: animate-sites2 .9s cubic-bezier(0.680, -0.550, 0.265, 1.550);}
 #sites a:nth-of-type(5n+2) {animation-duration: .3525s;-webkit-animation-duration: .3525s;    -moz-animation: animate-sites3 .3s cubic-bezier(0.680, -0.550, 0.265, 1.550); } */
 #sites a:hover, #sites a:active {
-/*    background: none;
-    border:1px solid transparent;
-    color:#c46161;
-	 font-size: 330%; 
-    box-shadow:none;
-    text-shadow:#060606 0px 0px 5px, #b45151 0px 1px, #b04c4c 0px 2px;
-    z-index:2; 
-    background: #1e90ff;*/
-    box-shadow: inset 0px 0px 100px 100px rgba(255,255,255,.2);
+	text-shadow: 5px 5px 0px black;
 }
 #search {
     height:46px;
@@ -248,16 +240,13 @@ border: 0;
     -moz-animation: animate-opacity .6s linear;
 }
 #search input[type="text"] {
-    background:rgba(22,22,22,.3);
-    background: rgba(0,0,0,.1);
-    border:1px solid rgba(30,30,30,.2);
-    border-bottom:1px solid rgba(48,48,48,.4);
+    background: #fff; 
     border: none;
     width:100%;
     height:33px;
     padding:3px 86px 3px 6px;
-    /*border-radius:5px;
-    box-shadow: rgba(0,0,0,.5) 0 0 3px;*/
+    /*border-radius:5px;*/
+    /*box-shadow: rgba(0,0,0,.5) 0 0 3px;*/
     color: black;
 }
 #search input[type="text"]:hover, #search input[type="text"]:focus {
@@ -265,7 +254,7 @@ border: 0;
 }
 #search button {
     cursor:pointer;
-    font-size:18px;
+    font-size:12px;
     position:absolute;
     top:1.7px;
     right:2px;
@@ -278,7 +267,7 @@ border: 0;
     text-shadow:#fefefe 0 1px;
     width:80px;
     height:30px;
-    border-radius:3px;
+    /*border-radius:3px;*/
     box-shadow:inset #fefefe 0 0 3px, #0f0f0f 0 0 3px;
     box-shadow: none;
 	padding-bottom:2px;

@@ -14,24 +14,18 @@ var config =
 {
     "sites":
     [
-        { "url": "http://gmail.com/",                                "text": "gmail" },
-        { "url": "http://youtube.com/",                              "text": "youtube"  },
-        { "url": "http://boards.4chan.org/g/",                       "text": "tech"   },
-        { "url": "http://stackoverflow.com",                       "text": "stack"  },
-        { "url": "http://slashdot.org",                         		 "text": "/."  },
-        { "url": "http://metasearch.torrentproject.com/",                           "text": "torrents" },
-        { "url": "http://extensions.gnome.org",    					       	 "text": "gnome"  },
-		{ "url": "http://www.free-tv-video-online.me/",                           "text": "free tv"   },
-        { "url": "http://facebook.com/",                         	"text": "fb"   },
-        { "url": "http://libgen.info",                           "text": "libgen"  },
-        { "url": "http://gnome-look.org/",                          "text": "look" },
-        { "url": "http://github.com/",                          "text": "github"   }
+        { "url": "http://gmail.com/",                                "text": "gm" },
+        { "url": "http://youtube.com/",                              "text": "yt" },
+        { "url": "http://boards.4chan.org/g/",                       "text": "/g/"},
+        { "url": "http://thepiratebay.org/",         							   "text": "dl" },
+        { "url": "http://facebook.com/",                             "text": "fb" },
+        { "url": "http://github.com/",                               "text": "git"}
     ],
     "search":
     {
-        "url"  : "http://www.google.com/search",
+        "url"  : " https://startpage.com/do/search?prf=78b4b608d2cfed35b4f2d6a332237c7c",
         "name" : "Search...",
-        "query": "q"
+        "query": "query"
     }
 }, d = document;
 
