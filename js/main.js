@@ -17,15 +17,15 @@ var config =
         { "url": "http://gmail.com/",                                "text": "gm" },
         { "url": "http://youtube.com/",                              "text": "yt" },
         { "url": "http://boards.4chan.org/g/",                       "text": "/g/"},
-        { "url": "http://thepiratebay.org/",         							   "text": "dl" },
+        { "url": "https://news.ycombinator.com/",         			 "text": "hn" },
         { "url": "http://facebook.com/",                             "text": "fb" },
         { "url": "http://github.com/",                               "text": "git"}
     ],
     "search":
     {
-        "url"  : " https://startpage.com/do/search?prf=78b4b608d2cfed35b4f2d6a332237c7c",
+        "url"  : "https://duckduckgo.com/",
         "name" : "Search...",
-        "query": "query"
+        "query": "q"
     }
 }, d = document;
 
