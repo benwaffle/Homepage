@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="raleway.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="skeleton.css">
+	<style type="text/css">
+		#container {
+			text-align: center;
+		}
+		a.button {
+			margin: 10px;
+			width: 110px;
+		}
+	</style>
+</head>
+<body>
+	<div id="container"></div>
+	<script type="text/javascript">
+		var links = {
+			"ddg": "https://duckduckgo.com",
+			"mail": "https://inbox.google.com",
+			"cal": "https://calendar.google.com",
+			"/g/": "https://boards.4chan.org/g/",
+			"hn": "https://news.ycombinator.com",
+			"yt": "https://youtube.com",
+			"fb": "https://facebook.com",
+			"phx": "https://www.phoronix.com",
+			"git": "https://github.com",
+			"reddit": "https://reddit.com",
+			"lwn": "https://lwn.net/",
+		};
+
+		var rows = 3, i = 0;
+		var html = "";
+
+		for (var x in links) {
+			if (i % rows == 0) {
+				if (i != 0) html += '</div>';
+				html += '<div class="row">';
+			}
+			html += '<a class="button button-primary" href=' + links[x] + '>' + x + '</a>';
+			++i;
+		}
+		html += '</div>';
+		document.getElementById('container').innerHTML = html;
+	</script>
+</body>
+</html>
+
